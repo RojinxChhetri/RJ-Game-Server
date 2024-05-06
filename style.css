@@ -1,0 +1,102 @@
+body {
+    background-color: #03141c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.main-container {
+    text-align: center;
+    background-color: #022034;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #f5f5dc;
+    transition: all 0.5s ease, transform 0.3s ease;
+    width: 80%;
+    max-width: 600px;
+}
+
+.main-container:hover {
+    transform: translateY(-10px);
+}
+
+#lethtml, #numhtml, #tophtml {
+    font-size: 1.15em;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif; /* Ensure Roboto font is used */
+}
+
+#lethtml {
+    background: linear-gradient(to right, #28a745, #1ca034);
+    color: #ffffff;
+}
+
+#lethtml:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#numhtml {
+    background: linear-gradient(to right, #286ea7, #1b66a3);
+    color: #ffffff;
+}
+
+#numhtml:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#tophtml {
+    background: linear-gradient(to right, #a7282e, #a31a21);
+    color: #ffffff;
+}
+
+#tophtml:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #03141c; /* Updated to match body's background color */
+    color: #f5f5dc;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif; /* Ensures the footer text uses the Roboto font */
+}
+
+.footer a {
+    color: #f5f5dc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    #lethtml, #numhtml, #tophtml {
+        padding: 10px 15px;
+    }
+}

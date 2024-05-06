@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/letter-game/letter-game.css">
+    <title>Letter Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Letter Game</h1>
+        <button id="go-home" onclick="window.location.href = 'index.html'">Home</button> <br> <br>
+        <select id="difficulty-select">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <div id="score">Score: 0</div>
+        <div id="timer">10</div>
+        <div id="letters-container"></div>
+        <input type="text" id="input-field" aria-label="Type the letters" placeholder="Type the letters">
+        <button id="start-button">Start Game</button>
+        <div id="leaderboard">
+            <h3>Leaderboard</h3> 
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+    <div id="notification"></div>
+    <script src="/letter-game/letter-game.js"></script>
+    <div class="footer">
+        Made with ❤️ by <a href="https://www.rojinchhetri.com" target="_blank" rel="noopener noreferrer">Rojin Chhetri</a>
+    </div>
+</body>
+</html>

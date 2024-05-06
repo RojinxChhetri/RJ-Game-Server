@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #03141c;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .coming-soon-container {
+            text-align: center;
+            background-color: #022034;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            color: #f5f5dc;
+            transition: all 0.5s ease, transform 0.3s ease;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .coming-soon-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .loading-animation {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f5f5dc;
+            border-top-color: #28a745;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .go-home-button {
+            font-size: 1.15em;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .go-home-button:hover {
+            background-color: #1ca034;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #03141c; /* Updated to match body's background color */
+            color: #f5f5dc;
+            text-align: center;
+            padding: 10px 0;
+            font-family: 'Roboto', sans-serif; /* Ensures the footer text uses the Roboto font */
+        }
+
+        .footer a {
+            color: #f5f5dc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .coming-soon-container {
+                padding: 15px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <h1>Coming Soon</h1>
+        <div class="loading-animation"></div>
+        <button class="go-home-button" onclick="window.location.href='index.html'">Go Home</button>
+    </div>
+    <div class="footer">
+        Made with ❤️ by <a href="https://www.rojinchhetri.com" target="_blank" rel="noopener noreferrer">Rojin Chhetri</a>
+    </div>
+</body>
+</html>
