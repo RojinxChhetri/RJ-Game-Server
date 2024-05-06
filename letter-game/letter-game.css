@@ -60,7 +60,7 @@ h1 {
   box-shadow: 0 0 10px #4a90e2;
 }
 
-#start-button, #go-home {
+#start-button, #go-home, #restart-button {
   font-size: 1em;
   padding: 10px 20px;
   background-color: #28a745;
@@ -72,7 +72,7 @@ h1 {
   font-family: 'Roboto', sans-serif; /* Ensure Roboto font is used for buttons */
 }
 
-#start-button:hover, #go-home:hover {
+#start-button:hover, #go-home:hover, #restart-button:hover {
   background-color: #2ea043;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

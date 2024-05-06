@@ -1,3 +1,8 @@
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+    alert('No Cheating Mate!');
+});
+
 var LetterGame = {
     timer: null,
     seconds: 10,
@@ -34,7 +39,7 @@ var LetterGame = {
             characters += '1234567890';
         } else if (this.difficulty === 'hard') {
             characters += '1234567890!@#$%^&*';
-        }
+        } 
         let randomSequence = '';
         for (let i = 0; i < 20; i++) {
             const randomIndex = Math.floor(Math.random() * characters.length);
@@ -128,4 +133,8 @@ document.getElementById('start-button').addEventListener('click', function() {
 
 document.getElementById('input-field').addEventListener('input', function() {
     LetterGame.checkInput();
+});
+
+document.getElementById('restart-button').addEventListener('click', function() {
+    LetterGame.startGame();
 });
