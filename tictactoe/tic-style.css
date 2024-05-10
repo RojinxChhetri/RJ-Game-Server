@@ -1,0 +1,157 @@
+/* General Body Styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #03141c;
+    color: #f5f5dc;
+}
+
+/* Game Container Styles */
+.game-container {
+    text-align: center;
+    background-color: #022034;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    color: #f5f5dc;
+    transition: all 0.3s ease, transform 0.3s ease;
+    width: 80%;
+    max-width: 600px;
+    /* Centering the game container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This makes the container take up the full viewport height */
+}
+
+.game-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading Styles */
+h1 {
+  margin-bottom: 10px;
+  color: #f5f5dc;
+}
+
+/* Tic-Tac-Toe Board Styles */
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #decbcb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #333;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #c6baba;
+}
+
+/* Current Player Indicator Styles */
+#current-player {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #f5f5dc;
+}
+
+/* New Game Button Styles */
+#new-game {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#new-game:hover {
+  background-color: #2ea043;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Button Styles */
+#go-home {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#go-home:hover {
+  background-color: #2ea043;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification Styles */
+#notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background: #21262d;
+  border-left: 3px solid #58a6ff;
+  color: #f5f5dc;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+#notification.show {
+  opacity: 1;
+  top: 30px;
+}
+
+/* Footer Styles */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #03141c;
+  color: #f5f5dc;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer a {
+  color: #f5f5dc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+.game-container {
+    width: 90%;
+  }
+}
